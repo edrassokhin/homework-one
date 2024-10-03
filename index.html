@@ -28,25 +28,25 @@
     <form action="">
         <h1>Работа с формами</h1>
         <fieldset class="one">
-            <label for="text">Введите ФИО:</label> <br>
-            <input type="text"> <br> <br>
-            <label for="password">Введите пароль:</label> <br>
-            <input type="password"> <br> <br>
+            <label for="name">Введите ФИО:</label> <br>
+            <input type="text" id="name"> <br> <br>
+            <label for="pass">Введите пароль:</label> <br>
+            <input type="password" id="pass"> <br> <br>
             <label for="select">Какой диск вы хотите получить?</label> <br> <br>
-            <input type="radio" name="disk"> CD <br>
-            <input type="radio" name="disk"> DVD <br>
-            <input type="radio" name="disk"> Blu-Ray <br> <br>
-            <label for="">Какие обучающие курсы вы хотите видеть на диске?</label> <br> <br>
-            <input type="checkbox"> Курсы по Adobe Photoshop <br>
-            <input type="checkbox"> Курсы по Adobe Illustrator <br>
-            <input type="checkbox"> Курсы по Adobe After Effects <br> <br>
+            <input type="radio" name="disk" id="select"> CD <br>
+            <input type="radio" name="disk" id="select"> DVD <br>
+            <input type="radio" name="disk" id="select"> Blu-Ray <br> <br>
+            <label for="lessons">Какие обучающие курсы вы хотите видеть на диске?</label> <br> <br>
+            <input type="checkbox" id="lessons"> Курсы по Adobe Photoshop <br>
+            <input type="checkbox" id="lessons"> Курсы по Adobe Illustrator <br>
+            <input type="checkbox" id="lessons"> Курсы по Adobe After Effects <br> <br>
             <label for="delivery">Выберите способ доставки:</label> <br> <br>
-            <select name="delivery" id="">
+            <select name="delivery" id="delivery">
                 <option value="k">Доставка курьером</option>
                 <option value="s">Самовывоз</option>
             </select> <br> <br>
             <label for="adress">Ваши комментарии к заказу:</label> <br> <br>
-            <textarea name="adress" id=""></textarea> <br> <br>
+            <textarea name="adress" id="adress"></textarea> <br> <br>
             <button type="submit">Создать заказ</button>
             <button type="reset">Отмена</button>
         </fieldset>
