@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашнее задание</title>
+    <style>
+        form {
+            width: 30%;
+            margin: 0 auto;
+            background-color: #C2CAD0;
+            padding: 30px;
+            border-radius: 20px;
+        }
+
+        body {
+            background-color: #C2B9B0;
+        }
+
+        .one {
+            background-color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <h1>Работа с формами</h1>
+        <fieldset class="one">
+            <label for="text">Введите ФИО:</label> <br>
+            <input type="text"> <br> <br>
+            <label for="password">Введите пароль:</label> <br>
+            <input type="password"> <br> <br>
+            <label for="select">Какой диск вы хотите получить?</label> <br> <br>
+            <input type="radio" name="disk"> CD <br>
+            <input type="radio" name="disk"> DVD <br>
+            <input type="radio" name="disk"> Blu-Ray <br> <br>
+            <label for="">Какие обучающие курсы вы хотите видеть на диске?</label> <br> <br>
+            <input type="checkbox"> Курсы по Adobe Photoshop <br>
+            <input type="checkbox"> Курсы по Adobe Illustrator <br>
+            <input type="checkbox"> Курсы по Adobe After Effects <br> <br>
+            <label for="delivery">Выберите способ доставки:</label> <br> <br>
+            <select name="delivery" id="">
+                <option value="k">Доставка курьером</option>
+                <option value="s">Самовывоз</option>
+            </select> <br> <br>
+            <label for="adress">Ваши комментарии к заказу:</label> <br> <br>
+            <textarea name="adress" id=""></textarea> <br> <br>
+            <button type="submit">Создать заказ</button>
+            <button type="reset">Отмена</button>
+        </fieldset>
+    </form> <br>
+    <form>
+        <i>Пожалуйста, заполните форму. <br>Поля обязательные к заполнению отмечены *</i> <br> <br>
+        <fieldset class="one">
+            <legend>Контактная информация</legend>
+            Имя * <input type="text" required> <br> <br>
+            Телефон <input type="tel"> <br> <br>
+            Почта * <input type="email" required>
+        </fieldset> <br>
+        <fieldset class="one">
+            <legend>Персональная информация</legend>
+            Возраст * <input type="number" required> <br> <br>
+            Пол <select name="pol" id="">
+                <option value="j">Женский</option>
+                <option value="m">Мужской</option>
+            </select> <br>
+            Перечислите личные качества: <textarea name="personality" id=""></textarea>
+        </fieldset> <br>
+        <fieldset class="one">
+            <legend>Любимые животные</legend>
+            <input type="checkbox"> Кошки
+            <input type="checkbox"> Собаки
+            <input type="checkbox"> Лошади <br> <br>
+            <input type="checkbox"> Змеи
+            <input type="checkbox"> Рыбы
+            <input type="checkbox"> Пауки
+        </fieldset> <br>
+        <button type="submit">Отправить информацию</button>
+    </form>
+</body>
+
+</html>
